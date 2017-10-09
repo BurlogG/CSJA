@@ -27,10 +27,14 @@ public class Main {
             symbols = str1.nextLine();
             System.out.println("Variable: " + symbols);
 
+        System.out.println(" "); //-----------------------
+
         float num_5 = 23 , num_6 = 32 , res;
         res=num_5+num_6; //math
         res++;           //+1
         System.out.println(res);
+
+        System.out.println(" "); //-----------------------
 
         int g = 234;
         if (g!=234 && j==3){  //op condition
@@ -41,6 +45,9 @@ public class Main {
         } else {
             System.out.println("nope");
         }
+
+        System.out.println(" "); //-----------------------
+
         switch (j) { //switch
             case 12:
                 System.out.println("j = 12");
@@ -58,6 +65,63 @@ public class Main {
         }
         for (int h = 1; h <= 10; h++)
             System.out.println("Element h is: " + h);
+            System.out.println(" ");
+        for (int h1 = 100; h1 >= 10; h1 -= 10)
+            System.out.println("Element h is: " + h1);
+
+        System.out.println(" "); //-----------------------
+
+        int k=0;
+        while (k <= 15) {
+            System.out.println("<< " + k);
+            k++;
+        }
+
+        System.out.println(" "); //-----------------------
+
+        int f =100;
+        do {
+            System.out.println(">> " +f);
+            f++;
+        } while (f < 10);
+
+        System.out.println(" "); //-----------------------
+
+        //int [] arr = new int [3]; //array
+        int [] arr = new int [] {56, 489, 325};
+        //arr[0] = 23;
+        //arr[2] = 657;
+        System.out.println("arr " + arr[0] + " " + arr[1] + " " + arr[2]);
+
+        System.out.println(" "); //-----------------------
+
+        float [] arr1 = new float [] {56.2f, 489.5f, 325.5f, 678.654f};
+        for (int u = 0; u <4; u++) {
+            System.out.println("arr " + u + " is " + arr1[u]);
+        }
+
+        System.out.println(" "); //-----------------------
+
+        int [][] arr2 = new int[][] { // 2d array
+                {23,78,65,78},
+                {23,78,65,78}
+        };
+        arr2[1][1] = 234;
+        System.out.println("arrr " + arr2[1][1]);
+
+        for (int y=0; y<3; y++) {
+            for (int y1=0; y1<4; y1++) {
+                System.out.print("arrr " + arr2[y][y1] + "   ");
+            }
+            System.out.println("");
+        }
+
+        System.out.println(" "); //-----------------------
+
+    }
+
+
+
 
 
     }
