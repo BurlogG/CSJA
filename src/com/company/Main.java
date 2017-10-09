@@ -33,7 +33,7 @@ public class Main {
         System.out.println(res);
 
         int g = 234;
-        if (g!=234 && j==3){  //ops
+        if (g!=234 && j==3){  //op condition
             System.out.println("yep");
         } else if (g>100) {
             System.out.println("is bigger than 100");
@@ -55,8 +55,9 @@ public class Main {
                 break;
                 default:
                     System.out.println("unknow");
-
         }
+        for (int h = 1; h <= 10; h++)
+            System.out.println("Element h is: " + h);
 
 
     }
