@@ -153,8 +153,18 @@ public class Main {
 
         //inheritance
 
-        Student vova = new Student(200, 80, 11 );
+        Student vova = new Student(200, 80, 11);
         System.out.println("vova " + vova.course + " course, height = " + vova.height);
+
+        //static
+
+        System.out.println(Person.sum);
+        Person.write("Your number is 3");
+        System.out.println(str);
+
+        //final
+
+        final float pi = 3.14f;
     }
 
     public static void func(int a, int b) {
