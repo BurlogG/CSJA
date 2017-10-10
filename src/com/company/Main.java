@@ -151,7 +151,10 @@ public class Main {
         Person ilya = new Person(190, 100);
         System.out.println("ilya height = " + ilya.height);
 
+        //inheritance
 
+        Student vova = new Student(200, 80, 11 );
+        System.out.println("vova " + vova.course + " course, height = " + vova.height);
     }
 
     public static void func(int a, int b) {

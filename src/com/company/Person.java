@@ -1,7 +1,7 @@
 package com.company;
 
 public class Person {
-    int height;
+    protected int height;
     float weight;
 
     void say (String str) {
