@@ -18,28 +18,33 @@ public class Main {
         String str = "kek";
         System.out.println("Variable = " + num_0);
 
+        System.out.println("Enter number ");
+
         Scanner num_4 = new Scanner(System.in); //int
-            int j;
-            j =num_4.nextInt();
-            System.out.print("Variable: " + j);
+        int j;
+        j = num_4.nextInt();
+        System.out.println("Variable: " + j);
+
+        System.out.println("Enter word ");
+
         Scanner str1 = new Scanner(System.in); //string
-            String symbols;
-            symbols = str1.nextLine();
-            System.out.println("Variable: " + symbols);
+        String symbols;
+        symbols = str1.nextLine();
+        System.out.println("Variable: " + symbols);
 
         System.out.println(" "); //-----------------------
 
-        float num_5 = 23 , num_6 = 32 , res;
-        res=num_5+num_6; //math
+        float num_5 = 23, num_6 = 32, res;
+        res = num_5 + num_6; //math
         res++;           //+1
         System.out.println(res);
 
         System.out.println(" "); //-----------------------
 
         int g = 234;
-        if (g!=234 && j==3){  //op condition
+        if (g != 234 && j == 3) {  //op condition
             System.out.println("yep");
-        } else if (g>100) {
+        } else if (g > 100) {
             System.out.println("is bigger than 100");
 
         } else {
@@ -60,18 +65,18 @@ public class Main {
                 if (j != 100)
                     System.out.println("ok");
                 break;
-                default:
-                    System.out.println("unknow");
+            default:
+                System.out.println("unknow");
         }
         for (int h = 1; h <= 10; h++)
             System.out.println("Element h is: " + h);
-            System.out.println(" ");
+        System.out.println(" ");
         for (int h1 = 100; h1 >= 10; h1 -= 10)
             System.out.println("Element h is: " + h1);
 
         System.out.println(" "); //-----------------------
 
-        int k=0;
+        int k = 0;
         while (k <= 15) {
             System.out.println("<< " + k);
             k++;
@@ -79,38 +84,38 @@ public class Main {
 
         System.out.println(" "); //-----------------------
 
-        int f =100;
+        int f = 100;
         do {
-            System.out.println(">> " +f);
+            System.out.println(">> " + f);
             f++;
         } while (f < 10);
 
         System.out.println(" "); //-----------------------
 
         //int [] arr = new int [3]; //array
-        int [] arr = new int [] {56, 489, 325};
+        int[] arr = new int[]{56, 489, 325};
         //arr[0] = 23;
         //arr[2] = 657;
         System.out.println("arr " + arr[0] + " " + arr[1] + " " + arr[2]);
 
         System.out.println(" "); //-----------------------
 
-        float [] arr1 = new float [] {56.2f, 489.5f, 325.5f, 678.654f};
-        for (int u = 0; u <4; u++) {
+        float[] arr1 = new float[]{56.2f, 489.5f, 325.5f, 678.654f};
+        for (int u = 0; u < 4; u++) {
             System.out.println("arr " + u + " is " + arr1[u]);
         }
 
         System.out.println(" "); //-----------------------
 
-        int [][] arr2 = new int[][] { // 2d array
-                {23,78,65,78},
-                {23,78,65,78}
+        int[][] arr2 = new int[][]{ // 2d array
+                {23, 78, 65, 78},
+                {23, 78, 65, 78}
         };
         arr2[1][1] = 234;
         System.out.println("arrr " + arr2[1][1]);
 
-        for (int y=0; y<2; y++) {
-            for (int y1=0; y1<4; y1++) {
+        for (int y = 0; y < 2; y++) {
+            for (int y1 = 0; y1 < 4; y1++) {
                 System.out.print("arrr " + arr2[y][y1] + "   ");
             }
             System.out.println("");
@@ -120,19 +125,19 @@ public class Main {
 
         //functions - methods
 
-        func (23, 74);
-        int temp = func1 (23, 74);
+        func(23, 74);
+        int temp = func1(23, 74);
         System.out.println("Result 2 is: " + temp);
 
     }
 
-    public static void func (int a, int b) {
+    public static void func(int a, int b) {
         int res1;
         res1 = a + b;
         System.out.println("Result is: " + res1);
     }
 
-    public static int func1 (int a, int b) {
+    public static int func1(int a, int b) {
         int res1;
         res1 = a + b;
         return res1;
