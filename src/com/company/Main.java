@@ -109,7 +109,7 @@ public class Main {
         arr2[1][1] = 234;
         System.out.println("arrr " + arr2[1][1]);
 
-        for (int y=0; y<3; y++) {
+        for (int y=0; y<2; y++) {
             for (int y1=0; y1<4; y1++) {
                 System.out.print("arrr " + arr2[y][y1] + "   ");
             }
@@ -118,11 +118,23 @@ public class Main {
 
         System.out.println(" "); //-----------------------
 
+        //functions - methods
+
+        func (23, 74);
+        int temp = func1 (23, 74);
+        System.out.println("Result 2 is: " + temp);
+
     }
 
+    public static void func (int a, int b) {
+        int res1;
+        res1 = a + b;
+        System.out.println("Result is: " + res1);
+    }
 
-
-
-
+    public static int func1 (int a, int b) {
+        int res1;
+        res1 = a + b;
+        return res1;
     }
 }
