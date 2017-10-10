@@ -129,6 +129,29 @@ public class Main {
         int temp = func1(23, 74);
         System.out.println("Result 2 is: " + temp);
 
+        System.out.println(" "); //-----------------------
+
+        //classes (person.java)
+
+        Person maks = new Person();
+        maks.height = 200;
+        maks.weight = 80.4f;
+
+        maks.say("hi, i can`t");
+        System.out.println("maks height = " + maks.height);
+
+        Person oleg = new Person();
+        oleg.height = 180;
+        oleg.weight = 75.8f;
+
+        System.out.println("oleg height = " + oleg.height);
+
+        //construct
+
+        Person ilya = new Person(190, 100);
+        System.out.println("ilya height = " + ilya.height);
+
+
     }
 
     public static void func(int a, int b) {
